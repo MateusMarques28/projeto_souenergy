@@ -1,0 +1,21 @@
+{
+    "name": "mateus.lima/projeto_souenergy",
+    "description": "Projeto",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "MateusLima\\ProjetoSouenergy\\": "src/"
+        }
+    },
+    "require": {
+        "firebase/php-jwt": "^5.5"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "core\\": "core/"
+        },
+        "files": [
+            "Config.php"
+        ]
+    }
+}
