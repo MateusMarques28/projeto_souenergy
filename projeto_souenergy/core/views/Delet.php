@@ -9,7 +9,7 @@
 </head>
 
 <body id="corpo">
-    <form action=/Dados_Atualizados method="POST" id="form">
+    <form action=/Dados_Deletados method="POST" id="form">
         <div align="center" id="div2">
             <input type="hidden" name="id" value="">
             Nome:
@@ -21,7 +21,7 @@
             Uf:
             <input type="text" name="uf" id="uf" value=""><br>
 
-            <input type="submit" value="Salvar">
+            <input type="submit" value="Deletar">
 
         </div>
     </form>

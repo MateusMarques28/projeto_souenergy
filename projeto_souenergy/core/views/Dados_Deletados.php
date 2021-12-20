@@ -1,0 +1,1 @@
+<h1>Dados deletados com sucesso</h1><a href="/tabela">Voltar</a>

@@ -1,8 +1,9 @@
-<h1>Lista De Usuários e Informações</h1>
+<h2>Lista De Usuários e Informações</h2>
+<a href="/Login">Voltar</a>
 
 <?php
 
-use core\classes\Conec;
+use core\models\Db\Conec;
 
 try {
 
@@ -21,7 +22,6 @@ try {
         <td>" . $linha[$key]->cidade . "</td> 
         <td>" . $linha[$key]->uf . "</td> 
         <td><a href ='/Editar'>Edit</a>//<a href ='/Delete'>Delet</a>//<a href ='/Detalhes'>Details</a></td> </tr>";
-
     }
 } catch (PDOException $e) {
     echo "Error" . $e->getMessage();

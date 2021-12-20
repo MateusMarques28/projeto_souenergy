@@ -3,7 +3,7 @@
 namespace core\controller;
 
 use core\classes\Loja;
-use core\models\Usuarios;
+use core\models\Insert\Usuarios;
 
 class Main
 {
@@ -49,6 +49,35 @@ class Main
         Loja::layout([
             'Usuario_Logado',
         ]);
+    }
+
+    public function editar()
+    {
+        Loja::layout([
+            'Dados_Atualizados',
+        ]);
+
+        $ed = new Usuarios();
+        $ed -> editar();
+    }
+
+    public function delete(){
+
+        Loja::layout([
+            'Dados_Deletados',
+        ]);
+        
+        $del = new Usuarios();
+        $del -> delete();
+    }
+
+    public function delet(){
+
+        Loja::layout([
+            'Layout/Header',
+            'Delet',
+        ]);
+
     }
 
     public function verifica_usuario()

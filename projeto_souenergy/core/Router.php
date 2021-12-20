@@ -50,6 +50,25 @@ $router['edit'] = [
 ];
 
 
+$router['Dados_Atualizados'] = [
+    'rota' => '/Dados_Atualizados',
+    'controller' => 'Main',
+    'action' => 'editar'
+];
+
+$router['delete'] = [
+    'rota' => '/Delete',
+    'controller' => 'Main',
+    'action' => 'delet'
+];
+
+$router['Dados_Deletados'] = [
+    'rota' => '/Dados_Deletados',
+    'controller' => 'Main',
+    'action' => 'delete'
+];
+
+
 $url = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 foreach ($router as $rota) :
     //echo JWT::encode(['user' => ['mateus']], key(['chavinha_secreta']));
